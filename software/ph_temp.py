@@ -1,6 +1,6 @@
 from pip._vendor import requests
-import random
-import time
+import random  # biblioteca que gera numeros pseudoaleatorios
+import time  # biblioteca para controle de tempo
 while(True):
 
     # Gera valores pseudoaleatorios para ph (simulacao IoT)
@@ -19,4 +19,4 @@ while(True):
         str(umidade) # endereco do display de umidade
     leitura_umi = requests.get(url_u)  # atualiza o valor do display de umidade
     
-    time.sleep(2)
+    time.sleep(2)  # aguarda 2 segundos antes da proxima iteração
