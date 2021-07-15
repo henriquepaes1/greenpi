@@ -12,7 +12,11 @@ A  prototipagem do hardware foi feita utilizando Arduino e alguns outros sensore
 Caso ainda tenha dúvidas sobre alguma parte do projeto, sinta-se livre para entra em contato com um dos desenvolvedores.
 
 Diogo Monteiro do Amaral - dmontamaral@gmail.com
+
 Henrique Paes de Souza - hpaesdesouza@gmail.com
+
 Lucas Carvalho - lucascarvalholc2001@gmail.com
+
+Rodrigo Galvez Lima - rodrigogalvezlima3@gmail.com
 
 
