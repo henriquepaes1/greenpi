@@ -21,7 +21,7 @@ leitura_luz = requests.get(
     'http://'+blynk_server+'/'+auth_token+'/get/'+pin_lumi)
 # executa leitura do valor de luminosidade
 
-leituraBruta_luz = leitura_luz.text
+leituraBruta_luz = leitura_luz.text  # valor retornado pela leitura do sensor
 
 leituraFinal_luz = leituraBruta_luz.replace(
     "[", " ").replace("]", " ").replace('"', " ").strip()
