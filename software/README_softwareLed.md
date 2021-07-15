@@ -1,6 +1,6 @@
 
 
-Explicação arquivo LED e algumas funcionalidades da biblioteca requests:
+
 
 Linha 20: a função .get da biblioteca requests vai até o endereço utilizando as variaveis previamente definidas (auth token e blynk_server) em uma string
 (usa-se a sintaxe +variavel+ para inserir uma string dentro de outra na linguagem Python). Nesse caso, a URL contém o comando /get/, portanto retornará o
@@ -10,7 +10,7 @@ Linha 24: A função .text da biblioteca requests **retorna uma string**, sendo 
 
 Linha 26: Na linha 26 há um pequeno **tratamento de dados**, pois a leitura com a função .text retorna algo como ["valor"], por conta disso é necessario substituir
 os colchetes e as aspas por espaços vazios usando a seguinte notacao .replace("antigo", "novo"). Isso faria com que a nova resposta em texto fosse: "  valor  ", 
-sendo assim, usa-se a função .strip() para remover os espaços em branco excedentes.
+sendo assim, usa-se a função .strip() para remover os espaços em branco excedentes antes e depois da string.
 
 Linhas 30 - 38: realiza-se o mesmo processo para a leitura dos valores do led
 
