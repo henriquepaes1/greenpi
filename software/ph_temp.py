@@ -1,6 +1,6 @@
 from pip._vendor import requests
-import random
-import time
+import random  # biblioteca que gera numeros pseudoaleatorios
+import time  # biblioteca para controle de tempo
 while(True):
 
     # Gera valores pseudoaleatorios para ph (simulacao IoT)
@@ -20,5 +20,10 @@ while(True):
     url_u = 'http://blynk-cloud.com/2NLtjZavPi2EoqCN-Txn1PF3zCRn9VFp/update/V4?value=' + \
         str(umidade)  # endereco do display de umidade
     leitura_umi = requests.get(url_u)  # atualiza o valor do display de umidade
+<<<<<<< HEAD
 
     time.sleep(2)
+=======
+    
+    time.sleep(2)  # aguarda 2 segundos antes da proxima iteração
+>>>>>>> da0c028ea500cdc7a57769aae85fc08fb2719026
