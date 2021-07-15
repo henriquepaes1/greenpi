@@ -9,14 +9,16 @@ while(True):
         str(ph)  # define o endereco do display para pH
     leitura_ph = requests.get(url)  # atualiza o valor do display de ph
 
-    temp = 25 + random.randint(1, 3) - random.randint(1, 3) #  simulacao IoT de temperatura
+    # simulacao IoT de temperatura
+    temp = 25 + random.randint(1, 3) - random.randint(1, 3)
     url_t = 'http://blynk-cloud.com/2NLtjZavPi2EoqCN-Txn1PF3zCRn9VFp/update/V3?value=' + \
         str(temp)  # display dos valores de temperatura
-    leitura_temp = requests.get(url_t)  # atualiza o valor do display de temperatura
+    # atualiza o valor do display de temperatura
+    leitura_temp = requests.get(url_t)
 
-    umidade = 85 + random.randint(1, 7) - random.randint(1, 7)
+    umidade = 85 + random.randrange(1, 7) - random.randrange(1, 7)
     url_u = 'http://blynk-cloud.com/2NLtjZavPi2EoqCN-Txn1PF3zCRn9VFp/update/V4?value=' + \
-        str(umidade) # endereco do display de umidade
+        str(umidade)  # endereco do display de umidade
     leitura_umi = requests.get(url_u)  # atualiza o valor do display de umidade
-    
+
     time.sleep(2)
